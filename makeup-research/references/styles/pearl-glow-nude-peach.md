@@ -1,6 +1,6 @@
 # 珍珠柔光裸桃妆
 
-状态：仅分析；尚未生成试妆或获得生成效果认可。
+状态：已试图；象牙白强化版本的无参考生成与固定人物换妆均获用户认可。仅限本次结果，不代表跨人物与跨模型稳定性。
 来源：用户提供的白色褶皱头巾、珍珠耳钉、黑背景肩颈肖像。风格名是便于检索的描述，不代表已知流派或产品。未收录人物原图。
 
 ## 目标
@@ -85,4 +85,33 @@ Create a photographic portrait of a new adult woman, framed from the upper chest
 
 ## 反馈与修订
 
-本轮只依据参考图完成观察、候选配方和提示词，未执行生图。新人物迁移、布光复现与用户试妆认可均待验证。后续反馈应修订此案例，不覆盖已有冷白透粉闪光妆。
+初版淡妆与自然肤质描述过强，输出偏暖米色，象牙白特征不明显。连续编辑又放大了皮肤压纹；加重侧光后出现暖亮发顶和明显半脸阴影，用户明确认为不如前版。不能把这些结果当成成功版本。
+
+后续将“象牙白妆容”置于提示词最前，并明确亮乳白、偏中性冷、淡桃红作衬托；柔光同时照顾脸部两侧，不追求重侧影。无图新人物版本得到用户“不错不错”的反馈；随后固定人物版本获用户“可以”并要求推送。两者仍可见少量人工纹理，需要继续改进。
+
+实测使用内置 imagegen；无图版本未传图，固定人物版本仅传用户当轮人物图。未暴露具体模型版本、seed 或采样参数。没有上传人物照片。此修订不覆盖已有冷白透粉闪光妆。
+
+
+## 已验证变体：象牙白妆容优先
+
+识别“象牙白妆容”“乳白透肤”“象牙白底妆”等意图时，使用本变体，而非把它解释为普通暖裸妆。先写核心底色，再写次要妆色与纹理。此变体不需要银色闪片。
+
+- 主色：亮乳白象牙妆面，偏中性冷，保留明暗细节；不用暖米色、古铜或日晒色替代。
+- 衬色：淡桃粉从白底透出，裸桃玫瑰唇内侧略深，局部湿润反光。
+- 光线：宽而柔的中性白光加轻补光，两侧脸都清楚明亮，鼻侧与下颌只保留柔和阴影；避免整片正面泛白与过重侧影。
+- 皮肤：脸颈肩手色调协调；细节轻而不规则，不反复强调毛孔，不靠锐化增加真实性。
+- 身份：有图保持原五官、脸型、发型和动作，不把妆容变化解释为另换人物。
+
+### 固定人物提示词
+
+```text
+Edit the supplied portrait of the SAME adult person. Preserve recognizable facial anatomy, eye shape and spacing, nose, lip outline, jaw, expression, gaze, hairstyle, hand positions, clothing, jewelry, framing and background arrangement. Main requested change: unmistakably luminous milky IVORY-WHITE cosmetic makeup, pale neutral-cool porcelain foundation, not warm beige, tan or bronze. Coordinate face, neck, exposed shoulders and hands in a translucent pale ivory finish with a faint peach-pink flush beneath. Keep tonal detail rather than blank white patches. Pale peach-beige eyelids, fine extended soft-black upper liner, separated lashes and natural gray-brown brows. Remove scattered eye glitter. Nude peach-rose moist lips with a slightly deeper inner tint. Continuous refined skin luminosity on upper cheeks, forehead, nose and shoulders. Broad neutral-white soft frontal/upper-left light with gentle fill keeps both sides of the face luminous, with delicate nose and jaw shadows. Hair stays dark and neutral; room stays subdued. Skin detail is fine, irregular and unobtrusive, never etched, embossed, web-like or repetitive. No facial or body reshaping, new props, text or watermark.
+```
+
+### 无参考图提示词
+
+```text
+Create one photographic beauty portrait of a new adult woman wearing visibly IVORY-WHITE MAKEUP: luminous pale neutral-cool ivory porcelain foundation across face, neck, shoulders and upper chest. The complexion reads as bright milky ivory, not golden, beige, tan or bronze. Preserve subtle tonal detail. A faint translucent peach-pink blush beneath the ivory base, pale peach-beige eyelids, fine extended soft-black eyeliner, separated lashes, soft gray-brown brows and moist nude rose-peach lips. Selective continuous pearl-like skin highlights; no glitter particles. Very fine unobtrusive skin texture with smooth tonal transitions, no etched or repeated pattern. Gentle three-quarter turn and relaxed gaze at camera, dark loosely gathered hair, small pearl studs and ivory pleated off-shoulder fabric. Vertical 3:4 upper-body composition against a deep quiet background. Broad neutral-white soft upper-left light and gentle fill keep both sides luminous with delicate facial modeling. Face dominant, accessories subordinate. No warm yellow cast, harsh half-face shadow, body reshaping, waxy skin, overexposure, text or watermark.
+```
+
+珍珠耳钉与白布料是无图示例造型，有图换妆时保留原首饰衣服。验收必须看象牙白是否足够明显、是否白底透粉、是否出现脸颈手色差，以及纹理是否自然；成功生成一次不等于自动触发能力已经测试。
