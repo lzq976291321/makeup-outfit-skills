@@ -8,13 +8,13 @@ subject: 新的成年人物，或用户指定身份
 identity_source: 无 / 图1
 style_source: 图2 / 文字风格
 pose_source: 自拟 / 图3
-identity_keep: 脸部比例、肤色与个体特征
+identity_keep: 脸部比例与个体特征；肤色默认冷白，明确要求可覆盖
 mood: 安静、视线略向下
 framing: 竖幅上半身近景
 aspect_ratio: 3:4
 lighting: 近轴前向闪光感，背景低亮度
 palette: 低饱和玫瑰色与中性环境
-makeup: 自然底妆，眼睑细闪，局部水润唇
+makeup: 冷白透粉底妆，粉色珠光眼影与银粉细闪，水润玫瑰唇
 pose: 双手松叠在下巴下方，明确遮挡
 wardrobe: 细罗纹针织
 material_contrast: 哑光织物、皮肤微光、少量银饰
@@ -46,7 +46,7 @@ Preserve [IDENTITY / STRUCTURAL PRIORITIES].
 支持独立 negative prompt 时可用：
 
 ```text
-identity drift, altered facial proportions, changed skin tone, waxy skin,
+identity drift, altered facial proportions, waxy skin,
 excessive smoothing, oversized eyes, fused fingers, duplicated hands,
 disconnected wrists, nails penetrating lips, floating rings,
 unexplained lighting directions, clipped facial highlights,

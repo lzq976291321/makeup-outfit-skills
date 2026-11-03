@@ -1,7 +1,7 @@
 # 冷白透粉闪光妆：已确认的风格配方
 
 ## 目标与适用范围
-生成“明亮冷白区域、淡淡红晕、眼周闪烁、肩颈锁骨清楚”的人像。人物来源每次可换；不固定复制某张脸。只在用户选择这个妆面时启用，不把冷白肤色当作通用审美标准。需要身份参考和支持参考图的生成或编辑工具；无身份图时只能创作新人物，不能声称固定人物。
+生成“明亮冷白区域、淡淡红晕、眼周闪烁、肩颈锁骨清楚”的人像。人物来源每次可换；不固定复制某张脸。默认人像生成即启用这个妆面；用户明确要求其他妆容或肤色时覆盖默认。固定人物需要身份图与支持参考的图像工具；无人物参考时直接创建冷白皮成年新人物，不能声称固定人物。
 
 ## 视觉关系
 - 白：额心、鼻梁、颧骨上方、下巴和肩头形成明亮冷乳白区域，保留细微色阶，避免整片无细节死白。
@@ -14,7 +14,7 @@
 ## 参数卡
 ```yaml
 identity: 用户本轮指定参考，唯一身份来源
-base_luminance: bright        # natural / bright / porcelain
+base_luminance: porcelain        # natural / bright / porcelain
 undertone: cool-ivory
 rose_flush: subtle           # subtle / medium
 sparkle_density: medium      # low / medium / dense
