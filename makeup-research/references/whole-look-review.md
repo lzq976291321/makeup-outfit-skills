@@ -4,7 +4,7 @@
 
 ## 先标注参考图角色
 
-身份图负责人物是谁，风格图负责妆容、配饰和姿势的目标。单张人物照用于换妆时，默认保留它的眼神、姿势和首饰；研究整套参考风格时，记录全部元素及其可迁移关系。换妆不等于默认更换首饰、动作与服装；复现整体造型或用户指定时才迁移这些元素。
+身份图负责人物是谁，风格图负责妆容、配饰和姿势的目标。仅做局部换妆时保留人物照的眼神、姿势和首饰；完整风格迁移时只固定身份，造型由目标风格决定；研究整套参考风格时，记录全部元素及其可迁移关系。换妆不等于默认更换首饰、动作与服装；复现整体造型或用户指定时才迁移这些元素。
 
 ## 必须观察的字段
 
@@ -31,3 +31,5 @@ Hands: [orientation, overlap, contact point; or outside the frame].
 Jewelry and accessories: [earrings, necklace, rings, nails, hair accessories; exact placement and material].
 Preserve [specified elements] from the identity image; transfer only [authorized style elements].
 ```
+
+两套已积累风格的具体眼神、手势、发型与首饰见 [整体造型重新分析](style-direction.md)，不能将身份图的动作与发型误当成身份的一部分。
