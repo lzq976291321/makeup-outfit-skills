@@ -21,7 +21,7 @@ description: 分析参考穿搭与耳环、项链、戒指、美甲等配饰，�
 3. 给出可替换项与不可变项。商品还原保留颜色、领口、袖型、扣件和图案；自由搭配才允许重设计。
 4. 按人物本身比例设计衣服的松量与落点，不拉长腿、缩腰或改变肩宽。用衣料垂坠和裁切表达造型。
 5. 写清材质行为：针织有纱线与受力变化，棉有哑光褶皱，缎有宽幅连续反射，皮革有厚度，金属为小面积硬反光。系带穿孔、纽扣受力和衣片连接要可解释。
-6. 换装任务保留人物、姿态与指定背景；检查领口、腋下、袖口、手指和首饰接触。复杂服装先解决结构，再调装饰。
+6. 明确只换衣服时保留人物、姿态与指定背景；参与完整写真设计时只固定脸部辨识特征和用户指定项，其余按目标风格设计；检查领口、腋下、袖口、手指和首饰接触。复杂服装先解决结构，再调装饰。
 7. 与当前妆容协调：强细闪妆可减少首饰与服装的反光竞争；但用户要求华丽叠加时按目标执行。只改穿搭时保留已有妆容。
 ## 参数卡
 ```yaml
@@ -41,6 +41,7 @@ must_keep: 人物、体型、妆容、单品细节
 may_change: 用户允许调整项
 ```
 ## 提示词模板
+以下模板仅用于明确的局部换装任务。完整写真设计不使用冻结发型、姿态与背景的句子，应将这些维度按目标风格重新填写。
 ```text
 Dress the same person from the identity reference in [GARMENTS]. Preserve their face, hairstyle, body proportions, pose and [OTHER FIXED ELEMENTS]. Match [GARMENT REFERENCE DETAILS]. Use [SILHOUETTE, FIT AND LAYERING], [COLOR AREA RELATIONSHIPS] and [MATERIAL BEHAVIOR]. Show plausible seams, closures, folds and contact with skin and hands. Keep [MAKEUP AND BACKGROUND] unchanged. Frame [CROP] so the intended outfit details remain visible. Avoid altered body proportions, fused fabric, floating straps and broken fastenings.
 ```

@@ -1,17 +1,19 @@
 ---
 name: makeup-research
-description: 在人物妆容、写真或修图语境下，识别冷白皮、冷白透粉、白里透红、布灵布灵、bling bling、珠光眼妆、眼周细闪、珍珠柔光、裸桃妆、象牙白妆容等目标妆效及近义描述时使用，也适用于分析参考图、提炼妆容与美甲风格、根据反馈迭代 Skill。泛泛生成人像或非妆容物体闪光不触发。有图保留人物换妆，无图创建新成年人物。
+description: 在人物妆容、写真或修图语境下，识别冷白皮、冷白透粉、白里透红、布灵布灵、bling bling、珠光眼妆、眼周细闪、珍珠柔光、裸桃妆、象牙白妆容等目标妆效及近义描述时使用，也适用于分析参考图、提炼妆容与美甲风格、根据反馈迭代 Skill。泛泛生成人像或非妆容物体闪光不触发。默认由 Skill 主导整张人像设计；有图只提取脸部辨识特征，无图创建新成年人物，仅用户明确限定时做局部换妆。
 ---
 
 # 妆容研究
 
-适用于分析参考妆容、提炼可迁移配方、固定人物试妆和对比修正。输出可执行妆面参数与提示词；不把某个人的五官当作妆容，默认采用冷白透粉闪光妆，突出眼周细闪、皮肤光泽与自然锁骨。
-## 创作权重：妆容优先
-主打妆容，明确优先级为 **妆容 > 后期处理 > 穿搭配饰**，不是三个平行维度。先把妆容做精，再用后期增强已有妆效，最后安排克制的服饰与配件。此处是设计与验收顺序；自进化仍只允许文生图，不表示生成后再图生图处理。
+适用于分析参考妆容、提炼可迁移配方、保留本人辨识度的完整写真设计和对比修正。生成任务交付完整成片，提示词任务交付整图设计规格；不把某个人的五官当作妆容，默认采用冷白透粉闪光妆，突出眼周细闪、皮肤光泽与自然锁骨。
+## 默认任务：保留脸部身份，设计整张图
+生成或编辑人物图时，默认交付完整人像作品。身份图只回答“这个人是谁”：保留眼型眼距、鼻部形态、唇形、脸部轮廓及个体辨识特征，让画完后仍像本人；不把原照的发型、神态、姿态、服装、场景、构图或光线当成身份约束。不用缩鼻、削脸、放大眼睛或模板脸代替化妆；身体结构与比例保持合理，不要求复制原照姿态或轮廓投影。
 
-妆容先验收：冷白透粉底色与脸颈协调、眼影色阶和边界、眼线贴合与睫毛分束、细闪泪光的位置和尺度、腮红透明度、唇色层次与水润反射，以及皮肤不油。局部充分呈现且整体悦目，才继续深化后期和配饰。妆容不足时，优先修改妆面文字规格，不用换衣服、增加元素、光晕、场景或动作掩盖问题。
+除用户明确指定的保留项外，Skill 自主设计妆容、发型、视线与表情、头肩与手部动作、服装配饰、场景背景、景别与裁切、人物位置、照明及整图后期。未指定就是交给 Skill 设计，不逐项索要授权，不自动沿用原照。普通“给她化这个妆”、只给身份照或风格名也按完整成片处理；仅明确“只改妆，其他不变”等局部要求才收窄范围。只分析或只写提示词时尊重该交付范围。
 
-后期保护并增强妆容的颜色与质地，不抢走眼唇重心；穿搭配饰只负责衬托，可简到素色领口和小耳饰。构图与照明必须让脸部占比、眼睑、唇部及妆面细节清楚可读，变化构图也不能牺牲妆容展示。复杂情境、叙事与多元素不作为自进化的默认升级方向；不能把普通妆面包装成有氛围的成片后宣称妆容进步。
+生成前读取 [整体造型分析](references/whole-look-review.md)、[整图后期](references/post-production.md) 及适用风格卡，形成完整设计并写入工具提示词。风格卡未覆盖的维度由 Skill 补齐。简洁背景、无首饰、手在画外也可以是明确决定，不以堆满元素代表设计。无需强制每项都与原照不同；沿用应有风格上的理由，不能自动冻结。
+
+妆容仍是核心视觉重点，正常成片尺寸下清楚可读；整图设计与妆面质量共同验收。不能用场景掩盖弱妆，也不能因强调妆容而省略其他设计。若默认任务的结果只是原照片换妆，其余关系未经过设计，判为未完成。
 
 ## 美感与妆容表现标准
 无图生成默认选择年轻、好看的成年模特（约 20–25 岁），保留自然五官与个体特征；有身份图时尊重原人物，不套用新模特或擅自年轻化。人物好看只是起点，成片必须让人明确看到妆容设计带来的美感。
@@ -58,11 +60,11 @@ description: 在人物妆容、写真或修图语境下，识别冷白皮、冷�
 - 识别到目标妆效或用户显式调用本 Skill 后，才使用以下招牌默认值。用户只指定其中某项时，优先该项，其余作为可覆盖默认；用户指定自然肤色或无闪妆时不强加冷白与细闪。
 
 ## 触发后的默认行为
-- 有人物参考图：以当前明确的人物图为唯一身份参考，保留五官比例、脸型与体型；造型按所选 Skill 调整；只有用户明确限定局部换妆或指定保留项时才冻结相应元素，默认妆面为冷白透粉闪光妆。只给一张清楚人物照时，默认它是身份图；多张人物且身份不明确时才澄清。不将纯服装图或无人场景图当作身份图。
+- 有人物参考图：以当前明确的人物图为唯一身份参考，只保留脸部比例、轮廓与个体辨识特征；整图按所选 Skill 设计；只有用户明确限定局部换妆或指定保留项时才冻结相应元素，默认妆面为冷白透粉闪光妆。只给一张清楚人物照时，默认它是身份图；多张人物且身份不明确时才澄清。不将纯服装图或无人场景图当作身份图。
 - 无人物参考图：直接生成一位新的成年人物，默认冷白皮与完整招牌妆面，不索要身份图、不沿用之前案例中的人物脸。人物性别表达等未指定项可按当前语境决定。
 - 默认妆面：明亮冷乳白底色透淡玫瑰红晕，粉色珠光眼影与银粉色细闪集中眼睑、内眼角及局部下眼缘，水润玫瑰唇；脸颈肩肤色协调，保留皮肤纹理。
 - 默认表现：近轴闪光感、主体明亮背景较暗、上半身竖幅 3:4，以脸和眼妆为中心，突出皮肤光泽；画幅和衣着允许时自然展示锁骨，不为此改体型或强改用户指定衣服。
-- 用户明确限定局部换妆时保留其指定的服装、背景和构图；完整风格迁移需读取 [眼神、手势与发型配方](references/style-direction.md)，不固定身份图的造型；完整招牌写真请求或无图生成才使用上述默认摄影场景。按需读取冷白透粉配方。
+- 用户明确限定局部换妆时保留其指定的服装、背景和构图；默认完整成片需读取 [眼神、手势与发型配方](references/style-direction.md)，不固定身份图的造型；未另选风格时使用上述默认摄影方向，并自主补齐整图设计。按需读取冷白透粉配方。
 - 用户明确指定其他肤色、妆容、光线、衣服或比例时，以当轮要求为准。只要求分析或提示词时不擅自生成图片；明确要求生成时应调用可用图像工具，而非只返回提示词。
 
 ## 后期与整图调色
@@ -83,7 +85,7 @@ description: 在人物妆容、写真或修图语境下，识别冷白皮、冷�
 - [冷白透粉闪光妆](portrait-aesthetic-skill/references/porcelain-rose-flash.md)：一次人物编辑获用户认可；跨人物稳定性未验证。新案例按学习流程追加至此。
 
 ## 完整造型与神态
-用户要求完整造型复现时，妆容、配饰、穿搭、发型整理和神态一起分析，按风格卡执行；眼神拆成视线方向、眼睑开合、头部角度和嘴部状态，不推断真实心理。身份图只固定人物身份、五官比例与体型；已授权的发型、服装、配饰、姿态和视线可以改变，不继续机械套用“只换妆”的保留项。配饰与服装结构按穿搭流程补充，同一案例保留一个主配方，避免复制两套。
+默认完整成片或用户要求完整造型复现时，妆容、配饰、穿搭、发型整理和神态一起分析，按风格卡执行；眼神拆成视线方向、眼睑开合、头部角度和嘴部状态，不推断真实心理。身份图只固定脸部身份、五官比例与辨识特征；未被用户明确固定的发型、服装、配饰、姿态和视线由 Skill 设计，不继续机械套用“只换妆”的保留项。配饰与服装结构按穿搭流程补充，同一案例保留一个主配方，避免复制两套。
 
 ## 输入与边界
 明确身份图、妆容图、目标强度与任务（分析、生成或编辑）。身份图负责五官，妆容图负责色彩与表面反射。没有身份图时只做妆容方案或新人物；看不到图片时不得声称已分析。不改体型；发型、服装与背景按上述优先级处理。
@@ -93,7 +95,7 @@ description: 在人物妆容、写真或修图语境下，识别冷白皮、冷�
 3. 分离妆容与照明：检查白是否来自底妆或曝光，红是否受环境色影响。灯位未知时给复现假设，不当成事实。
 4. 按身份图的眼睑、眉骨、颧骨和唇形适配妆面，不缩鼻、削脸或放大眼睛。默认呈现冷白底色，用户明确要求保留原肤色或其他妆容时覆盖默认，脸颈肩保持协调。
 5. 先建立底色与红晕关系，再安排眼唇重点，最后调细闪和高光。只要求分析时不执行生成；要求试妆时使用当前可用图像工具。
-6. 对照检查身份、妆面位置、颜色、纹理和曝光，每轮只改一组主要变量。已满意图优先局部编辑，复查非目标区域是否漂移。
+6. 同时检查本人辨识度、整图设计、妆面、结构与光影。首次完整设计允许整体重构；已认可造型的修复才优先局部编辑。自进化遵守其文生图约束。
 ## 参数卡
 ```yaml
 identity_source: 当前人物参考图；无图则新成年人物
@@ -109,15 +111,20 @@ highlights: 位置、面积、强度
 skin_texture: 保留程度
 lighting: 光线假设与目标
 post_production: 整图白平衡、影调、色彩关系与纹理；按后期参考填写
-must_keep: 身份、发型、服装及构图中需保留项
+hair: 发型、分缝与体积
+gaze_expression: 视线、眼睑与唇部状态
+pose_hands: 头肩与躯干方向、手部动作或画外
+wardrobe_accessories: 服装轮廓、材质、配饰及佩戴关系
+scene_composition: 场景、背景、景别、裁切、人物位置、画幅与视觉主次
+must_keep: 脸部辨识特征与用户明确指定的保留项
 ```
 ## 提示词模板
 ```text
-[WITH A PERSON REFERENCE: Use it as the sole source of facial identity. WITHOUT ONE: Create a new adult person with cool porcelain-fair skin.] Preserve facial anatomy and recognizable individual features. Makeup intensity: visibly enhanced, fully applied beauty makeup, readable at normal viewing size. Apply [BASE], with [BLUSH PLACEMENT AND EDGE]. Shape [EYE MAKEUP] to the existing eyelids, add [SPARKLE SIZE, DENSITY AND LOCATION], and finish with [LIP COLOR AND SHEEN]. Use [LIGHTING] to reveal [SELECTIVE HIGHLIGHTS] while retaining skin texture and tonal detail. Keep [UNCHANGED ELEMENTS]. Avoid identity drift, clipped highlights, waxy skin and misplaced glitter.
+Create a fully art-directed photographic portrait with [STYLE AND VISUAL FOCUS]. Design the whole image. [WITH A PERSON REFERENCE: Use it only for recognizable facial identity: characteristic eye shape and spacing, nose, lips and facial contour. WITHOUT ONE: Create a new adult person.] Use [HAIRSTYLE], [GAZE AND EXPRESSION], [HEAD, BODY AND HAND ACTION], [WARDROBE AND ACCESSORY RELATIONSHIPS], [SCENE AND BACKGROUND], and [FRAMING, SUBJECT PLACEMENT, CROP AND ASPECT RATIO]. Makeup intensity: visibly enhanced, fully applied beauty makeup, readable at normal viewing size. Apply [BASE], [BLUSH PLACEMENT AND EDGE], [EYE MAKEUP], [SPARKLE SIZE, DENSITY AND LOCATION], and [LIP COLOR AND SHEEN]. Use [LIGHTING] and [WHOLE-IMAGE COLOR AND TONAL TREATMENT] to unify the portrait while retaining skin texture and readable makeup. Preserve [USER-EXPLICIT FIXED ELEMENTS, IF ANY]. Keep the person recognizable without facial reshaping.
 ```
 ## 无图生成示例
 ```text
-Create one photographic upper-body portrait of a new adult person with luminous cool porcelain-fair skin. Apply a bright milky-ivory base with translucent rose blush, pink pearlescent eyelids and crisp fine silver-pink twinkles around the eyelids and inner corners. Glossy rose lips, visible fine skin texture, consistent face-neck-shoulder finish. Near-axis flash against a dim neutral background. Vertical 3:4 framing; naturally visible collarbones where clothing allows. Preserve natural anatomy and controlled highlight detail.
+Create one photographic upper-body portrait of a new adult person with luminous cool porcelain-fair skin. Apply a bright milky-ivory base with translucent rose blush, pink pearlescent eyelids and crisp fine silver-pink twinkles around the eyelids and inner corners. Glossy rose lips, visible fine skin texture, consistent face-neck-shoulder finish. Near-axis flash against a dim neutral background. Near-center-part dark hair swept behind one ear, head gently turned with eyes returning to the lens, relaxed parted lips, shoulders angled and hands outside the frame. Matte ivory off-shoulder knit and small silver hoops frame the face. Place the person slightly off-center in an upper-body vertical 3:4 composition, with negative space toward the gaze and a dim charcoal studio background. Use neutral-cool grading, soft shadow detail and controlled contrast; naturally visible collarbones where clothing allows. Preserve natural anatomy and controlled highlight detail.
 ```
 
 ## 验收与沉淀

@@ -22,7 +22,9 @@ wardrobe: 细罗纹针织
 material_contrast: 哑光织物、皮肤微光、少量银饰
 background: 低细节室内
 must_keep: 身份与可解释的手部结构
-may_change: 发型、首饰、背景陈设
+hair: 按目标风格设计发型、分缝与体积
+design_scope: 默认整张图；仅用户明确限定时局部换妆
+user_fixed_elements: 仅用户明确指定项
 ```
 
 3:4 为通用默认，不是来源图比例。比例应按交付用途填写；工具不支持指定比例时说明限制，不伪造请求参数。
@@ -31,7 +33,7 @@ may_change: 发型、首饰、背景陈设
 有身份参考时，先写所选 Skill 的妆效和目标造型，再写本人辨识特征与用户明确指定的保留项。参考图的原光线、妆容与造型不得压过目标风格；参见 [主流程优先级](../../SKILL.md#有参考图时的优先级)。
 
 ```text
-Make the selected makeup and styling visibly present as described below. Use the person reference for recognizable identity features, not to constrain the target makeup or styling. Retain characteristic eye shape and spacing, nose, lip shape and facial contour; allow a strong cosmetic transformation while keeping the person recognizable. Preserve only the elements explicitly requested by the user.
+Design the entire image: hairstyle, gaze, expression, pose, hands, wardrobe, accessories, scene, composition, lighting and whole-image grading. Make the selected makeup and styling visibly present as described below. Use the person reference for recognizable identity features, not to constrain the target makeup or styling. Retain characteristic eye shape and spacing, nose, lip shape and facial contour; allow a strong cosmetic transformation while keeping the person recognizable. Preserve only the elements explicitly requested by the user.
 ```
 
 
@@ -39,7 +41,7 @@ Make the selected makeup and styling visibly present as described below. Use the
 Create a photographic portrait of [SUBJECT / IDENTITY INSTRUCTION].
 Use [STYLE SOURCE] only for [LIGHTING, COLOR AND MATERIAL RELATIONSHIPS].
 [FRAMING, ASPECT RATIO, CAMERA PERSPECTIVE].
-[HEAD ANGLE, GAZE, EXPRESSION].
+[HAIRSTYLE, HEAD ANGLE, GAZE, EXPRESSION].
 [EXPLICIT HAND ACTION, OVERLAP AND CONTACT].
 [ONE DOMINANT LIGHTING SETUP], with [SUBJECT–BACKGROUND SEPARATION].
 Makeup intensity: visibly enhanced, fully applied beauty makeup, readable at normal viewing size.
