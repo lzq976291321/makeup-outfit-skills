@@ -35,7 +35,7 @@ Preserve facial identity only. Use long dark straight hair extending over the ch
 ```
 
 ## 参考图优先级补充
-按 [主流程](../SKILL.md#有参考图时的优先级)，默认由 Skill 主导妆效和造型，参考图负责本人特征。只有用户明确要求保留原造型时，才使用局部换妆的冻结条件。下方“造型已认可后的编辑片段”仅供已认可结果的后续局部编辑，不能用于把首次生成限制成原照轻修。
+按 [主流程](../SKILL.md#有参考图时的优先级)，默认由 Skill 主导妆效和造型，参考图负责本人特征。只有用户明确要求保留原造型时，才使用局部换妆的冻结条件。下方“造型已认可后的局部加强”仅供已认可结果的后续局部编辑，不能用于把首次生成限制成原照轻修。
 
 ## 路由修正
 
@@ -55,10 +55,5 @@ Preserve facial identity only. Use long dark straight hair extending over the ch
 - 象牙白：明亮中性偏冷乳白底色，淡桃粉衬色更清楚；淡桃米色眼影、细长眼线、分束睫毛与裸桃玫瑰唇强化；颧骨、额头、鼻梁、锁骨和肩部是连续柔润反光，不加入银色闪片。
 - 两者：脸、颈、肩与可见手部妆面协调，背景与衣服不随肤色一起提亮；不改变五官或身体比例。细节仍需避免重复压纹，用户满意不代表微观纹理已完全真实。
 
-### 造型已认可后的编辑片段
-
-```text
-Preserve the accepted person's facial identity, facial proportions, gaze, expression, head and shoulder angles, hairstyle, hand gesture, jewelry, clothing, framing and background. Change only makeup intensity and the coordinated visible skin finish. Make the pale cosmetic base and makeup visibly more present, without brightening the background or clothes. [COOL-WHITE SPARKLE: luminous cool milky porcelain-white base, translucent rose-pink blush, clearer pink-rose eyeshadow, crisp fine silver-pink twinkles on lids and selected lower-eye areas, glossy rosier lips.] [IVORY-WHITE: luminous pale neutral-cool milky ivory base, dilute peach-pink cheeks, defined peach-beige eyelids, fine elongated liner, separated lashes, moist nude peach-rose lips, continuous pearl-like skin light and no glitter particles.] Use only the requested style clause. Preserve highlight detail and fine unobtrusive irregular skin texture. No facial reshaping, oversized glitter, waxy skin or repeated embossed texture.
-```
-
-不要将此片段直接用于首次完整造型生成：它的“保留”只作用于已经认可的造型，不是重新冻结原身份照的动作与发型。本次效果已获认可，跨人物与跨模型复现仍未验证。
+### 造型已认可后的局部加强
+仅用于用户已认可当前成片并明确要求局部加强的后续修改。根据当轮要求填写修改部位、妆色、强度与指定保留项；不提供可被首次生成误用的整套冻结提示词。历史认可针对上述两套成片，不代表应冻结新身份照的动作、发型、服装或背景，跨人物与跨模型复现仍需验证。

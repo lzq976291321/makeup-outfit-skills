@@ -36,7 +36,7 @@
 
 ## 完整造型复现：配饰、穿搭与神态
 
-此模式由用户明确授权，身份图只负责人物身份与身体比例。发型整理、服装、配饰、视线、头部和手部姿态按版本迁移；不继续保留身份图原有针织衣服、项链与低头微笑。只换妆模式仍使用下方原提示词。配饰金属色为视觉观察，不推断真实材质、品牌；只复现可见上半身，不虚构鞋裤。
+此模式是默认完整成片路径，身份图只提供脸部辨识特征。发型整理、服装、配饰、视线、头部和手部姿态按版本迁移；不继续保留身份图原有针织衣服、项链与低头微笑。仅明确的局部请求才按指定范围保留原照元素。配饰金属色为视觉观察，不推断真实材质、品牌；只复现可见上半身，不虚构鞋裤。
 
 |版本|配饰与服装|发型|眼神与姿态|组合关系|
 |---|---|---|---|---|
@@ -49,10 +49,10 @@
 
 ### 完整造型提示词用法
 
-以身份图为唯一人物来源，使用对应 A–D 妆面段，并用下列段落替换只换妆提示词中“保留原发型、服装、配饰”的句子。四宫格固定 A 左上、B 右上、C 左下、D 右下，统一背景与光线以便比较。
+以身份图为唯一脸部身份来源，将对应 A–D 妆面段与下列造型段合并；补齐目标背景、构图、照明与后期，不沿用身份照的摄影安排。A–D 是可独立使用的风格选项，选择本次所需版本并只保留对应提示段；原四宫格位置只标识历史样片，不约束输出布局。
 
 ```text
-Preserve the reference person's recognizable facial anatomy, natural skin tone, iris color and body proportions. Change hairstyle arrangement, outfit, accessories, gaze and pose according to the selected variant. Do not copy another model's face or enlarge the eyes. Keep the same neutral background and lighting across panels.
+Preserve the reference person's recognizable facial anatomy, characteristic eye shape and spacing, nose, lip shape and facial contour. Change hairstyle arrangement, outfit, accessories, gaze and pose according to the selected variant. Do not copy another model's face or enlarge the eyes. Design the background and lighting for the selected variant.
 A styling: center-parted sleek low gathered hair, thick silver hoop earrings, a short wavy silver chain with one small pearl pendant, black off-shoulder top; slight head turn, relaxed direct camera gaze, lips slightly parted, hands away from face.
 B styling: side-parted straight loose hair tucked behind one ear, small bright stud earrings, black lace thin-strap top, no necklace; head slightly lowered with direct camera gaze and slightly lowered upper lids, one hand naturally near the lower lip, lips slightly parted. Retain original iris color.
 C styling: gathered hair with loose side strands, delicate low-set metal-frame glasses, small metal earrings, black scarf with white polka dots around the neck, dark gray sleeveless waistcoat-style top; nearly frontal face, eyes glance toward image-left over the top of the low glasses, lips slightly parted.
@@ -92,14 +92,14 @@ variants:
   D: strongest-lifted-wing, outer-lash-emphasis, moist-nude-rose-brown-lips
 ```
 
-## 提示词：有身份图，换妆
+## 提示词：有身份图，完整成片
 
 以下为 A 版的完整可用提示词；选择 B、C、D 时，用后面的对应段替换 `Variant A` 段，不叠加四个版本。
 
 ```text
 Use the supplied person reference as the sole facial identity source. Preserve facial proportions, eye shape and spacing, nose, lip shape, jawline and natural skin tone. Apply muted rose-brown makeup: an even sheer-to-medium soft-matte base with fine skin texture and selective soft highlights on the upper cheeks and nose. Keep brows hairlike at the front with defined tapered tails. Use muted beige-brown and rose-brown eyelids, a fine upper lash line extending outward with a slight lift, and curled separated lash clusters emphasizing the middle and outer lashes. Keep blush softly diffused outward toward the cheekbones and retain a readable natural lip outline.
 Variant A: Keep eye depth light and the eyeliner extension restrained. Use soft warm peach cheeks and low-saturation nude rose-brown satin lips, with restrained skin sheen.
-Keep the original hairstyle, clothing, accessories, background and framing. Maintain a consistent face-neck-shoulder finish. Avoid added glitter particles, heavy smoky eyes, blocky brows, merged lashes, exaggerated contouring, enlarged eyes, reshaped facial anatomy, clipped highlights and waxy smoothing.
+Use the matching A/B/C/D styling paragraph above, including its hairstyle, outfit, accessories, gaze and pose. Design a vertical upper-chest composition with the face dominant, a quiet charcoal backdrop, soft neutral frontal light with gentle facial modeling, and restrained neutral grading that preserves rose-brown makeup. Use the reference only for facial identity, not its original photographic arrangement. Maintain a consistent face-neck-shoulder finish. Avoid added glitter particles, heavy smoky eyes, blocky brows, merged lashes, exaggerated contouring, enlarged eyes, reshaped facial anatomy, clipped highlights and waxy smoothing.
 ```
 
 版本替换段：
@@ -107,14 +107,14 @@ Keep the original hairstyle, clothing, accessories, background and framing. Main
 ```text
 Variant B: Increase muted rose-brown depth in the outer eye socket and along the lower lash line, with denser but separated upper lashes. Use warm rosy cheeks and deeper warm rose lips with restrained sheen. Keep nose highlights localized; preserve the person's original iris color.
 
-Variant C: Use a cooler soft rosy tint across the cheeks and subtly around the eyes, retaining brown definition at the outer corners and a clear fine eyeliner tail. Use soft rose bean-paste lips with restrained sheen and softly luminous skin. Do not add glasses unless requested.
+Variant C: Use a cooler soft rosy tint across the cheeks and subtly around the eyes, retaining brown definition at the outer corners and a clear fine eyeliner tail. Use soft rose bean-paste lips with restrained sheen and softly luminous skin. Include the low-set glasses and scarf from C styling.
 
 Variant D: Emphasize a crisp outward, slightly lifted eyeliner wing and longer separated outer lashes. Use soft pink-peach cheeks, moist nude rose-brown lips with selective glossy reflections, and localized upper-cheek sheen.
 ```
 
 ## 提示词：无身份图
 
-使用以上所选版本提示词，将开头两句替换为下段，并删除“保留原发型、衣着、背景”等依赖身份图的句子。无图不沿用参考人物的五官。
+使用以上所选版本提示词，将身份参考开头替换为下段，保留所选版本的完整造型与摄影设计。无图不沿用参考人物的五官。
 
 ```text
 Create a photographic head-and-shoulders portrait of a new adult woman with natural facial anatomy and fine skin texture. Use soft neutral frontal light that preserves facial volume and highlight detail, against a quiet neutral background.

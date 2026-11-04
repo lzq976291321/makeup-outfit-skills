@@ -4,7 +4,7 @@
 
 ## 使用范围
 
-独立双版本风格，按需调用，不覆盖原招牌默认。人物参考只提供身份与身体比例；完整造型模式可改变发型、服装、配饰、视线、表情、背景和照明。保留原眼型与眼距、鼻唇比例、面颊和下颌，不复制妆造参考模特的五官。保留身份不等于冻结原照低垂视线、偏暗曝光或暖色环境光。
+独立双版本风格，按需调用，不覆盖原招牌默认。人物参考只提供脸部辨识特征；默认完整成片设计发型、服装、配饰、视线、表情、背景和照明。保留原眼型与眼距、鼻唇比例、面颊和下颌，不复制妆造参考模特的五官。保留身份不等于冻结原照低垂视线、偏暗曝光或暖色环境光。
 
 ## A：玫瑰粉爱心
 
@@ -26,12 +26,14 @@
 
 避免反复用“恢复毛孔”叠加人工纹理；中间试图出现过重复皮肤纹路，属于失败表现。减少后期感应控制磨皮、锐化和过强亮边，不凭成片断言具体灯具、产品、美瞳或修图手段。
 
-## 双宫格提示词骨架
+## 独立成片提示词骨架
+
+选用玫瑰粉爱心或冰蓝银星中的一个风格段，删除另一个；两套是可选风格，不绑定双图或左右布局。
 
 ```text
-Create two equal photographic head-and-shoulders panels of the sole identity reference person. Preserve recognizable native eye shape and spacing, nose and lip proportions, cheek volume and soft jaw width. Adapt gaze naturally toward the camera with real catchlights without enlarging eyes. Bright fair skin with dimensional light and subtle photographic texture, matching face, neck and shoulders.
-Left: rose-brown irregular side-part loose broad S waves, lifted swept-back front roots and fine face-crossing strands; pale pink/champagne shimmer lids, defined extended black liner and separated upper/lower lashes, soft high pink blush, glossy rose-pink lips, varied asymmetrical translucent pink hearts and tiny rhinestones; pink lace shoulder strap, gray backdrop and direct frontal light without strong rim light.
-Right: near-black hair loosely gathered backward, modest rounded crown, long forehead and face wisps, holographic outline star clips; localized icy-blue middle/outer lids with pink/champagne transitions and silver-white eye sparkle, defined liner and lashes, light pink blush, sparse freckles, cheek silver stars, muted nude-rose gloss; dusty-blue sheer mesh diagonal off-shoulder top, long silver star necklace, black backdrop, controlled backlight and clear frontal fill.
+Create one photographic head-and-shoulders portrait of the sole identity reference person. Preserve recognizable native eye shape and spacing, nose and lip proportions, cheek volume and soft jaw width. Adapt gaze naturally toward the camera with real catchlights without enlarging eyes. Bright fair skin with dimensional light and subtle photographic texture, matching face, neck and shoulders.
+Rose-pink hearts option: rose-brown irregular side-part loose broad S waves, lifted swept-back front roots and fine face-crossing strands; pale pink/champagne shimmer lids, defined extended black liner and separated upper/lower lashes, soft high pink blush, glossy rose-pink lips, varied asymmetrical translucent pink hearts and tiny rhinestones; pink lace shoulder strap, gray backdrop and direct frontal light without strong rim light.
+Icy-blue stars option: near-black hair loosely gathered backward, modest rounded crown, long forehead and face wisps, holographic outline star clips; localized icy-blue middle/outer lids with pink/champagne transitions and silver-white eye sparkle, defined liner and lashes, light pink blush, sparse freckles, cheek silver stars, muted nude-rose gloss; dusty-blue sheer mesh diagonal off-shoulder top, long silver star necklace, black backdrop, controlled backlight and clear frontal fill.
 No copied model faces, enlarged eyes, narrowed pointed jaws, uniform ringlets, oversized high bun, knit replacement top, artificial skin patterns or excessive halo.
 ```
 

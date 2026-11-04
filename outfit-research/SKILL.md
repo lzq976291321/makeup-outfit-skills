@@ -6,6 +6,9 @@ description: 分析参考穿搭与耳环、项链、戒指、美甲等配饰，�
 # 穿搭研究
 
 适用于分析参考穿搭、提炼组合规律、固定人物换装与 AI 造型效果检查。关注衣服与人物、场景和妆容的关系；不默认改变人物体型、五官或肤色。
+## 输出形式
+宫格仅是历史验收时便于比较的展示方式，不是 Skill 的输出约束。默认生成独立单张成片；风格卡中的多个版本是可选方案，不要求一次全部生成。只有用户当轮明确要求宫格或拼图时才采用；要求多张时默认分别交付。历史记录里的左右、A–D 与格位仅用于识别当时样片，不规定新版布局。
+
 ## 参考图研究与持续迭代
 用户要求研究参考穿搭或配饰、提炼风格及迭代 Skill 时，读取 [参考图学习流程](references/reference-learning.md)。耳环、项链、美甲等可单独研究，不要求每次提供整套穿搭。美甲配色与首饰关系在此记录，详细甲面配方按需交给妆容流程；保留各风格自身特点，不把新风格覆盖为已有造型。
 
@@ -37,13 +40,13 @@ construction: 缝线、扣件、系带、衣片连接
 accessories: 耳环、项链、戒指、手链的数量、尺度、位置、材质及接触
 nails: 甲型、长度、底色、透明度、亮片与首饰呼应
 framing: 上半身/全身
-must_keep: 人物、体型、妆容、单品细节
+must_keep: 脸部辨识特征与用户明确指定项；不以冻结姿态保持身体比例
 may_change: 用户允许调整项
 ```
 ## 提示词模板
 以下模板仅用于明确的局部换装任务。完整写真设计不使用冻结发型、姿态与背景的句子，应将这些维度按目标风格重新填写。
 ```text
-Dress the same person from the identity reference in [GARMENTS]. Preserve their face, hairstyle, body proportions, pose and [OTHER FIXED ELEMENTS]. Match [GARMENT REFERENCE DETAILS]. Use [SILHOUETTE, FIT AND LAYERING], [COLOR AREA RELATIONSHIPS] and [MATERIAL BEHAVIOR]. Show plausible seams, closures, folds and contact with skin and hands. Keep [MAKEUP AND BACKGROUND] unchanged. Frame [CROP] so the intended outfit details remain visible. Avoid altered body proportions, fused fabric, floating straps and broken fastenings.
+Dress the same person from the identity reference in [GARMENTS]. Preserve recognizable facial identity and [USER-EXPLICIT FIXED ELEMENTS]. Design [HAIR, POSE, BACKGROUND, LIGHTING AND COMPOSITION] for the requested scope. Match [GARMENT REFERENCE DETAILS]. Use [SILHOUETTE, FIT AND LAYERING], [COLOR AREA RELATIONSHIPS] and [MATERIAL BEHAVIOR]. Show plausible seams, closures, folds and contact with skin and hands. Preserve only [USER-EXPLICIT MAKEUP OR BACKGROUND CONSTRAINTS, IF ANY]. Frame [CROP] so the intended outfit details remain visible. Avoid altered body proportions, fused fabric, floating straps and broken fastenings.
 ```
 ## 示例：哑光针织衬托闪光妆
 奶油白细罗纹露肩针织，领口露出自然锁骨；袖子有金属孔和连续交叉系带；银饰控制在小面积。白衣承担柔软大色块，细闪眼妆和皮肤承担亮点。换成深灰羊毛仍可保留软硬对照，不必复制白色。

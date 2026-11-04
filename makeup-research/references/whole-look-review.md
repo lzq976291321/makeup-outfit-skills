@@ -29,7 +29,7 @@ Gaze and expression: [direction, eyelid openness, brow tension, lip state].
 Head and body pose: [head turn/tilt, chin, shoulder line, torso direction].
 Hands: [orientation, overlap, contact point; or outside the frame].
 Jewelry and accessories: [earrings, necklace, rings, nails, hair accessories; exact placement and material].
-Preserve [specified elements] from the identity image; transfer only [authorized style elements].
+Use the identity image only for recognizable facial features. Design all styling elements for the target image. Preserve [USER-EXPLICIT FIXED ELEMENTS, IF ANY].
 ```
 
 两套已积累风格的具体眼神、手势、发型与首饰见 [整体造型重新分析](style-direction.md)，不能将身份图的动作与发型误当成身份的一部分。

@@ -1,7 +1,7 @@
 # 冷白透粉闪光妆：已确认的风格配方
 
 ## 当前执行优先级
-遵循妆容主流程“有参考图时的优先级”：Skill 主导妆效和造型，参考图提供本人辨识特征。下文保留原发型、动作、衣服与背景的旧换妆模板，仅适用于用户明确要求保留这些项的局部编辑；普通参考图化妆任务应采用目标配方造型，不能照抄冻结条件。已认可造型的后续加强可继续保留该造型。
+默认生成完整成片：身份图只提供脸部辨识特征，妆容、发型、神态动作、服装配饰、背景、构图、照明与后期由本风格设计。以下有图模板均为重新创作，不是原照局部换妆。仅用户明确限定局部范围或要求修复已认可成片时，另按实际目标填写保留项。
 
 ## 目标与适用范围
 生成“明亮冷白区域、淡淡红晕、眼周闪烁、肩颈锁骨清楚”的人像。人物来源每次可换；不固定复制某张脸。识别到冷白皮、布灵布灵、眼周细闪等人物妆效意图，或用户明确调用本配方后，默认启用这个妆面；用户明确要求其他妆容或肤色时覆盖默认。固定人物需要身份图与支持参考的图像工具；无人物参考时直接创建冷白皮成年新人物，不能声称固定人物。
@@ -31,21 +31,19 @@ background: dim-neutral-interior
 这些是提示词语义槽位，不是工具参数。起始建议使用 medium 细闪、selective 光泽；喜欢更强闪耀时再增加密度，避免同时把全脸油光和闪片密度都加到最高。
 
 ## 执行
-1. 标明唯一身份图，保留眼距、眼型、鼻唇比例、脸部轮廓与发型长度。妆面提亮不得转化成削脸、缩鼻或放大眼睛。
-2. 已有满意肖像时优先编辑该图，明确保留人物与构图，只改妆面、光泽和必要的遮挡。需要更突出锁骨时允许调整领口、手与头发位置。
+1. 标明唯一身份图，保留眼距、眼型、鼻唇比例、脸部轮廓与个体特征。妆面提亮不得转化成削脸、缩鼻或放大眼睛。
+2. 首次有图任务重新设计整图，不以原照作为待保留的成片。仅用户明确认可当前造型并要求局部加强时，按本次修改范围保留已通过部分。
 3. 先建立冷白与淡红的底色关系，再定位细闪；不要仅写“漂亮、白、闪”。
 4. 生成后检查脸颈色差、肩部曝光、细闪大小和锁骨阴影。若太油，降低额头和肩部连续高光；若太素，优先增加眼睑粉色与局部细闪，不盲目提亮全图。
 5. 用用户反馈选择效果。不要把助手个人偏好的更克制妆容覆盖用户已认可的强妆感。
 
 ## 可直接使用：固定人物生成
 ```text
-Create one photorealistic upper-body portrait of the same adult person in the supplied identity reference. Preserve their recognizable facial anatomy, eye shape and spacing, eyebrows, nose, lip outline, jaw contour and hairstyle length. Apply luminous cool porcelain-ivory cosmetic makeup: bright milky highlights across the central forehead, nose bridge, upper cheek planes and chin, retaining subtle skin texture and tonal detail. A faint translucent rose-pink flush shines through across the cheeks, eyelids and nose tip. Use clearly visible pink pearlescent eyeshadow and tiny crisp silver-pink twinkles across upper lids, inner corners and selected lower-lash areas. Keep the sparkle fine and localized, with glossy rose lips. Near-camera frontal flash-like illumination makes the skin bright against a dim neutral interior while retaining nose and jaw shadows. A matte ivory off-shoulder ribbed knit top frames the neck and upper chest. Keep both collarbones visible by resting hair behind the shoulders and placing relaxed overlapping hands toward one side below the clavicles. Show natural collarbone structure with narrow pearly highlights and gentle shadows, without changing body shape. Match the luminous makeup finish across face, neck, shoulders and upper chest. Face first, sparkling eyes second, hands subordinate. Preserve coherent hand anatomy and fine material distinctions. No identity drift, plastic skin, blown-out white patches, oversized glitter, artificial carved collarbones, floating rings, text or watermark.
+Create one photorealistic upper-body portrait of the same adult person in the supplied identity reference. Preserve their recognizable facial anatomy, eye shape and spacing, eyebrows, nose, lip outline, jaw contour. Use the reference only for facial identity. Design long dark hair swept behind the shoulders with soft crown volume and temple wisps; relaxed lowered gaze, gently parted lips and an offset head-and-shoulder angle. Use a vertical upper-chest composition with the face large and dominant, a quiet dim charcoal-green interior and neutral-cool grading that protects the pink makeup. Apply luminous cool porcelain-ivory cosmetic makeup: bright milky highlights across the central forehead, nose bridge, upper cheek planes and chin, retaining subtle skin texture and tonal detail. A faint translucent rose-pink flush shines through across the cheeks, eyelids and nose tip. Use clearly visible pink pearlescent eyeshadow and tiny crisp silver-pink twinkles across upper lids, inner corners and selected lower-lash areas. Keep the sparkle fine and localized, with glossy rose lips. Near-camera frontal flash-like illumination makes the skin bright against a dim neutral interior while retaining nose and jaw shadows. A matte ivory off-shoulder ribbed knit top frames the neck and upper chest. Keep both collarbones visible by resting hair behind the shoulders and placing relaxed overlapping hands toward one side below the clavicles. Show natural collarbone structure with narrow pearly highlights and gentle shadows, without changing body shape. Match the luminous makeup finish across face, neck, shoulders and upper chest. Face first, sparkling eyes second, hands subordinate. Preserve coherent hand anatomy and fine material distinctions. No identity drift, plastic skin, blown-out white patches, oversized glitter, artificial carved collarbones, floating rings, text or watermark.
 ```
 
-## 可直接使用：现有肖像编辑
-```text
-Edit this portrait while preserving the same person's facial anatomy, recognizable features, hairstyle length, framing and background. Change the makeup to a substantially brighter cool milky-ivory base, with a delicate translucent pink-red flush on cheeks, eyelids and nose tip. Add fine silver-pink sparkling highlights on the upper eyelids, inner corners and selectively beneath the eyes; glossy rose-pink lips. Retain fine skin texture and highlight detail. Make the collarbones clearly visible by gently lowering the off-shoulder neckline, moving the overlapping hands down to one side and clearing hair from the shoulder area. Emphasize existing collarbone structure with pearly upper-edge highlights and soft shadows beneath, without reshaping anatomy. Keep face, neck, shoulder and chest finish consistent. Use brighter near-axis flash against the dim room, distinguishing luminous skin from matte knit. Avoid excessive oiliness, opaque glitter patches, blown highlights and identity changes.
-```
+## 明确的局部修改
+仅当用户明确要求只改妆或修复已认可造型时，依据用户指定范围临时编写编辑提示词；不要从身份照自动推导保留发型、姿态、衣服、背景或构图。不提供默认冻结原照的复用模板。
 
 ## 质量检查
 - 远看：脸与肩颈明亮，背景退后；没有只剩白色块面。

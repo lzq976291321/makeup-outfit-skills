@@ -4,7 +4,7 @@
 来源：用户提供的白色褶皱头巾、珍珠耳钉、黑背景肩颈肖像。风格名是便于检索的描述，不代表已知流派或产品。未收录人物原图。
 
 ## 当前执行优先级
-遵循妆容主流程“有参考图时的优先级”：Skill 主导妆效和造型，参考图提供本人辨识特征。下文保留原发型、动作、衣服与背景的旧换妆模板，仅适用于用户明确要求保留这些项的局部编辑；普通参考图化妆任务应采用目标配方造型，不能照抄冻结条件。已认可造型的后续加强可继续保留该造型。
+默认生成完整成片：身份图只提供脸部辨识特征，妆容、发型、神态动作、服装配饰、背景、构图、照明与后期由本风格设计。以下有图模板均为重新创作，不是原照局部换妆。仅用户明确限定局部范围或要求修复已认可成片时，另按实际目标填写保留项。
 
 ## 目标
 
@@ -61,12 +61,12 @@ nails: not-visible-in-reference
 lighting: off-axis-front-upper-light-hypothesis
 ```
 
-肤色按本轮明确目标决定；复现此图时采用明亮象牙底色，不强制更冷、更白。固定人物优先保留骨相、眼型、眉眼距离、鼻唇特征与原发型；头巾和露肩造型仅在用户要求时加入。
+肤色按本轮明确目标决定；复现此图时采用明亮象牙底色，不强制更冷、更白。有身份图只保留脸部轮廓、眼型、眉眼距离和鼻唇特征；发型、头巾与服装按目标造型设计。
 
-## 提示词：有身份图，换妆
+## 提示词：有身份图，完整成片
 
 ```text
-Use the supplied person reference as the sole identity source. Preserve recognizable facial anatomy, eye shape and spacing, nose, lip outline, jawline and hairstyle. Change the makeup to a luminous ivory nude-peach look: a sheer, even base with fine skin texture and soft peach-rose cheeks, muted gray-brown brows with visible hair strokes, pale peach-beige eyelids with subtle taupe depth at the outer corners, and a precise fine upper lash line extending slightly outward. Keep lashes separated, with restrained emphasis at the outer corners. Use nude peach-rose lips, subtly deeper inside, with small moist highlights and visible lip texture. Keep the eye area free of glitter particles. Shape gentle continuous skin highlights across the forehead, nose and upper cheekbones. Preserve clothing, background and framing unless a change is requested. Where the existing composition reveals the shoulders, keep natural collarbone relief and a consistent face-neck-shoulder finish. Do not copy another person's facial proportions, enlarge irises, carve collarbones, add jewelry or turn the skin into plastic.
+Use the supplied person reference as the sole identity source. Preserve recognizable facial anatomy, eye shape and spacing, nose, lip outline, jawline. Use the reference for facial identity only. Design softly gathered dark hair, a few loose temple strands, a small pearl stud and ivory pleated fabric framing the crown and shoulders. Turn the head gently toward image-left, look back toward the lens with relaxed parted lips, and keep both hands outside the frame. Compose a vertical upper-chest portrait with the face dominant against a quiet black background. Use soft neutral-white upper-left light with gentle frontal fill and clean neutral-ivory grading. Change the makeup to a luminous ivory nude-peach look: a sheer, even base with fine skin texture and soft peach-rose cheeks, muted gray-brown brows with visible hair strokes, pale peach-beige eyelids with subtle taupe depth at the outer corners, and a precise fine upper lash line extending slightly outward. Keep lashes separated, with restrained emphasis at the outer corners. Use nude peach-rose lips, subtly deeper inside, with small moist highlights and visible lip texture. Keep the eye area free of glitter particles. Shape gentle continuous skin highlights across the forehead, nose and upper cheekbones. Show natural collarbone relief and a consistent face-neck-shoulder finish in the newly designed composition. Do not copy another person's facial proportions, enlarge irises, carve collarbones or turn the skin into plastic.
 ```
 
 ## 提示词：无身份图，完整造型示例
@@ -103,12 +103,12 @@ Create a photographic portrait of a new adult woman, framed from the upper chest
 - 衬色：淡桃粉从白底透出，裸桃玫瑰唇内侧略深，局部湿润反光。
 - 光线：宽而柔的中性白光加轻补光，两侧脸都清楚明亮，鼻侧与下颌只保留柔和阴影；避免整片正面泛白与过重侧影。
 - 皮肤：脸颈肩手色调协调；细节轻而不规则，不反复强调毛孔，不靠锐化增加真实性。
-- 身份：有图保持原五官、脸型、发型和动作，不把妆容变化解释为另换人物。
+- 身份：只保留原五官与脸部辨识特征；发型与动作采用目标设计，不把原照造型当作身份。
 
-### 固定人物提示词
+### 有身份图完整成片提示词
 
 ```text
-Edit the supplied portrait of the SAME adult person. Preserve recognizable facial anatomy, eye shape and spacing, nose, lip outline, jaw, expression, gaze, hairstyle, hand positions, clothing, jewelry, framing and background arrangement. Main requested change: unmistakably luminous milky IVORY-WHITE cosmetic makeup, pale neutral-cool porcelain foundation, not warm beige, tan or bronze. Coordinate face, neck, exposed shoulders and hands in a translucent pale ivory finish with a faint peach-pink flush beneath. Keep tonal detail rather than blank white patches. Pale peach-beige eyelids, fine extended soft-black upper liner, separated lashes and natural gray-brown brows. Remove scattered eye glitter. Nude peach-rose moist lips with a slightly deeper inner tint. Continuous refined skin luminosity on upper cheeks, forehead, nose and shoulders. Broad neutral-white soft frontal/upper-left light with gentle fill keeps both sides of the face luminous, with delicate nose and jaw shadows. Hair stays dark and neutral; room stays subdued. Skin detail is fine, irregular and unobtrusive, never etched, embossed, web-like or repetitive. No facial or body reshaping, new props, text or watermark.
+Create a new complete beauty portrait using the supplied person only as the facial identity reference. Preserve recognizable eye shape and spacing, nose, lip outline and facial contour. Design loosely gathered dark hair, ivory pleated head fabric and an off-shoulder wrap, one visible small pearl stud and no necklace. Turn the head slightly toward image-left, eyes looking back at the lens, lips gently parted without a broad smile, shoulders gently offset and hands outside the frame. Use a vertical upper-chest composition with the face dominant, quiet black background and clean neutral-cool grading. Main makeup design: unmistakably luminous milky IVORY-WHITE cosmetic makeup, pale neutral-cool porcelain foundation, not warm beige, tan or bronze. Coordinate face, neck, exposed shoulders and hands in a translucent pale ivory finish with a faint peach-pink flush beneath. Keep tonal detail rather than blank white patches. Pale peach-beige eyelids, fine extended soft-black upper liner, separated lashes and natural gray-brown brows. Remove scattered eye glitter. Nude peach-rose moist lips with a slightly deeper inner tint. Continuous refined skin luminosity on upper cheeks, forehead, nose and shoulders. Broad neutral-white soft frontal/upper-left light with gentle fill keeps both sides of the face luminous, with delicate nose and jaw shadows. Hair is dark and neutral; the designed backdrop stays subdued. Skin detail is fine, irregular and unobtrusive, never etched, embossed, web-like or repetitive. No facial or body reshaping, text or watermark.
 ```
 
 ### 无参考图提示词
@@ -117,7 +117,7 @@ Edit the supplied portrait of the SAME adult person. Preserve recognizable facia
 Create one photographic beauty portrait of a new adult woman wearing visibly IVORY-WHITE MAKEUP: luminous pale neutral-cool ivory porcelain foundation across face, neck, shoulders and upper chest. The complexion reads as bright milky ivory, not golden, beige, tan or bronze. Preserve subtle tonal detail. A faint translucent peach-pink blush beneath the ivory base, pale peach-beige eyelids, fine extended soft-black eyeliner, separated lashes, soft gray-brown brows and moist nude rose-peach lips. Selective continuous pearl-like skin highlights; no glitter particles. Very fine unobtrusive skin texture with smooth tonal transitions, no etched or repeated pattern. Gentle three-quarter turn and relaxed gaze at camera, dark loosely gathered hair, small pearl studs and ivory pleated off-shoulder fabric. Vertical 3:4 upper-body composition against a deep quiet background. Broad neutral-white soft upper-left light and gentle fill keep both sides luminous with delicate facial modeling. Face dominant, accessories subordinate. No warm yellow cast, harsh half-face shadow, body reshaping, waxy skin, overexposure, text or watermark.
 ```
 
-珍珠耳钉与白布料是无图示例造型，有图换妆时保留原首饰衣服。验收必须看象牙白是否足够明显、是否白底透粉、是否出现脸颈手色差，以及纹理是否自然；成功生成一次不等于自动触发能力已经测试。
+珍珠耳钉与白布料是本风格的完整造型方案，有图与无图均可采用；不自动带入身份照原首饰衣服。验收必须看象牙白是否足够明显、是否白底透粉、是否出现脸颈手色差，以及纹理是否自然；成功生成一次不等于自动触发能力已经测试。
 
 
 ## 整体造型分析
