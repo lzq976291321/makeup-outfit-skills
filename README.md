@@ -36,3 +36,5 @@ outfit-research/
 例如：“研究这张妆容并沉淀成新配方”“提炼这对耳环与领口的关系”“根据这次反馈更新刚才的风格”。只要求分析时不自动生成图片或修改仓库；要求沉淀时按对应流程更新文件。
 
 - [低饱和玫瑰棕四版完整造型](makeup-research/references/styles/muted-rose-brown-defined-eyes.md)：A 银饰露肩、B 蕾丝深眼窝、C 低位眼镜与波点颈巾、D 金饰挂脖；有身份图四宫格验收通过，原招牌默认不变。
+
+- [玫瑰粉爱心与冰蓝银星完整造型](makeup-research/references/styles/pink-hearts-icy-blue-stars.md)：新身份参考两宫格验收通过，记录妆面、发型、配饰、服装、光线与迁移边界。

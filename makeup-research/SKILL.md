@@ -77,6 +77,7 @@ description: 在人物妆容、写真或修图语境下，识别冷白皮、冷�
 ## 风格索引
 - [夜景橱窗冷白透粉妆](references/styles/night-storefront-porcelain-rose.md)：冷白透粉、细闪泪光、水润唇与不油底妆，结合可信的暖色夜景橱窗；一次纯文生图整体成片获用户认可，构图不固化。
 - [玫粉柔雾黑底近景](portrait-aesthetic-skill/references/rose-pink-velvet-closeup.md)：柔雾冷乳白底、眼周微闪、连鼻玫粉腮红与渐层亮唇，含柔淡/浓郁两版；无图生成与一次近景身份参考两宫格获认可，保留参考图适配经验与未验证范围。
+- [玫瑰粉爱心与冰蓝银星完整造型](references/styles/pink-hearts-icy-blue-stars.md)：两套妆面、发型、饰品、服装与光线；新身份参考两宫格获用户认可，含人物保真及人工纹理失败边界。
 - [低饱和玫瑰棕清晰眉眼妆](references/styles/muted-rose-brown-defined-eyes.md)：柔雾底妆、清晰眉眼与低饱和唇颊；保留自然裸桃棕、深邃玫瑰棕、柔粉玫瑰棕、上扬眼线亮唇四版；有身份图完整造型四宫格获用户认可。
 - [珍珠柔光裸桃妆](references/styles/pearl-glow-nude-peach.md)：含“象牙白妆容”强化配方；无图生成与固定人物换妆获用户认可，仍需改进人工纹理。
 - [冷白透粉闪光妆](portrait-aesthetic-skill/references/porcelain-rose-flash.md)：一次人物编辑获用户认可；跨人物稳定性未验证。新案例按学习流程追加至此。
