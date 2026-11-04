@@ -80,6 +80,7 @@ description: 在人物妆容、写真或修图语境下，识别冷白皮、冷�
 用户要求分析新妆容、美甲、提炼审美或迭代 Skill 时，读取 [参考图学习流程](references/reference-learning.md)。先忠实分析新参考，再沉淀独立配方；不将所有新风格强行改成冷白细闪。妆容侧负责脸部与美甲配方，穿搭侧负责耳环、项链等配饰的造型与佩戴关系；综合参考按重点协作，不重复套用两套完整流程。
 
 ## 风格索引
+- [蜜桃冷白碎闪猫眼与金饰黑卷发](references/styles/peach-sparkle-cat-eye-gold.md)：浅蜜桃粉眼底、冷白碎闪、外延猫眼与莓粉亮唇，配大圈金耳饰和黑金叠链；无图完整成片及一次有身份图的完整造型迁移均获用户认可，含服装与手势补全边界。
 - [夜景橱窗冷白透粉妆](references/styles/night-storefront-porcelain-rose.md)：冷白透粉、细闪泪光、水润唇与不油底妆，结合可信的暖色夜景橱窗；一次纯文生图整体成片获用户认可，构图不固化。
 - [玫粉柔雾黑底近景](portrait-aesthetic-skill/references/rose-pink-velvet-closeup.md)：柔雾冷乳白底、眼周微闪、连鼻玫粉腮红与渐层亮唇，含柔淡/浓郁两版；无图生成与一次近景身份参考两宫格获认可，保留参考图适配经验与未验证范围。
 - [玫瑰粉爱心与冰蓝银星完整造型](references/styles/pink-hearts-icy-blue-stars.md)：两套妆面、发型、饰品、服装与光线；新身份参考两宫格获用户认可，含人物保真及人工纹理失败边界。
