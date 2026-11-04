@@ -34,6 +34,9 @@ Preserve facial identity only. Turn the head slightly toward image-left while lo
 Preserve facial identity only. Use long dark straight hair extending over the chest, a near-center part with soft crown volume and curved loose forehead wisps. Lower the gaze toward the hands, eyelids relaxed, lips slightly parted without smiling. Bring both forearms upward toward the center, overlap relaxed hands just below the mouth: several fingers lie across the other hand, while two gently raised fingers form a narrow triangular gesture toward the lower lip, one decorated nail lightly approaching its outer edge. Keep coherent joints, overlap and contact; do not substitute a single fingertip resting on the chin. Use long translucent nude-pink almond nails with localized silver-white crystal accents, small silver hoops, a fine silver chain and restrained rings. Ivory ribbed off-shoulder knit with plausible eyelet lacing and a small rectangular buckle.
 ```
 
+## 参考图优先级补充
+按 [主流程](../SKILL.md#有参考图时的优先级)，默认由 Skill 主导妆效和造型，参考图负责本人特征。只有用户明确要求保留原造型时，才使用局部换妆的冻结条件。下方“造型已认可后的编辑片段”仅供已认可结果的后续局部编辑，不能用于把首次生成限制成原照轻修。
+
 ## 路由修正
 
 - 固定人物仅固定脸部身份与个体特征，不自动锁住发型、眼神、表情、姿势和首饰。

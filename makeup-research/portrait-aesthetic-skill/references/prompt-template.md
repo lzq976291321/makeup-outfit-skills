@@ -14,6 +14,8 @@ framing: 竖幅上半身近景
 aspect_ratio: 3:4
 lighting: 近轴前向闪光感，背景低亮度
 palette: 低饱和玫瑰色与中性环境
+post_production: 整图白平衡、影调、饱和度、肤色保护与纹理目标
+makeup_intensity: 默认加强妆感，正常成片尺寸清楚可见；用户明确指定时覆盖
 makeup: 冷白透粉底妆，粉色珠光眼影与银粉细闪，水润玫瑰唇
 pose: 双手松叠在下巴下方，明确遮挡
 wardrobe: 细罗纹针织
@@ -26,6 +28,12 @@ may_change: 发型、首饰、背景陈设
 3:4 为通用默认，不是来源图比例。比例应按交付用途填写；工具不支持指定比例时说明限制，不伪造请求参数。
 
 ## 正向模板
+有身份参考时，先写所选 Skill 的妆效和目标造型，再写本人辨识特征与用户明确指定的保留项。参考图的原光线、妆容与造型不得压过目标风格；参见 [主流程优先级](../../SKILL.md#有参考图时的优先级)。
+
+```text
+Make the selected makeup and styling visibly present as described below. Use the person reference for recognizable identity features, not to constrain the target makeup or styling. Retain characteristic eye shape and spacing, nose, lip shape and facial contour; allow a strong cosmetic transformation while keeping the person recognizable. Preserve only the elements explicitly requested by the user.
+```
+
 
 ```text
 Create a photographic portrait of [SUBJECT / IDENTITY INSTRUCTION].
@@ -34,7 +42,8 @@ Use [STYLE SOURCE] only for [LIGHTING, COLOR AND MATERIAL RELATIONSHIPS].
 [HEAD ANGLE, GAZE, EXPRESSION].
 [EXPLICIT HAND ACTION, OVERLAP AND CONTACT].
 [ONE DOMINANT LIGHTING SETUP], with [SUBJECT–BACKGROUND SEPARATION].
-[MAKEUP COLOR AND SELECTIVE SHEEN], preserving [SKIN TONE AND TEXTURE].
+Makeup intensity: visibly enhanced, fully applied beauty makeup, readable at normal viewing size.
+[MAKEUP COLOR, EYESHADOW GRADIENT, LASH-LINE DEFINITION, SEPARATED LASHES, VISIBLE BLUSH AND LIP COLOR, SELECTIVE SHEEN], preserving [SKIN TONE AND TEXTURE].
 [WARDROBE WITH FABRIC BEHAVIOR], [LIMITED ACCESSORY DETAILS].
 [BACKGROUND]. Keep [FOCAL HIERARCHY] and [DEPTH OF FIELD INTENT].
 Preserve [IDENTITY / STRUCTURAL PRIORITIES].
@@ -59,3 +68,6 @@ plastic knit fabric, broken lacing, competing background details
 仅使用目标工具实际支持的字段。尺寸/比例、参考强度、编辑保留范围、seed、步数与引导强度各有不同语义，不提供跨模型通用数值。未选模型时只交付语义参数卡。镜头和光圈放在文字提示中时属于视觉描述。
 
 调参顺序：先身份与构图，再动作，再光线色彩，最后微小装饰。使用工具的参考强度时从其默认或已验证配置起步；加强身份参考可能同时带入原背景与姿态，需要检查。记录实际模型标识、支持的参数、参考图角色与每次改动。相同 seed 仅在部分相同模型配置下便于比较，不证明人物相同。
+
+## 整图后期
+按 [后期与整图调色](../../references/post-production.md) 追加独立的成片调色段，与妆容和照明保持一致。自进化只允许文生图，不传参考图、不使用编辑模式；当前模板中的图像来源与身份参考句只用于独立有图任务。
