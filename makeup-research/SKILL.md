@@ -28,6 +28,7 @@ description: 在人物妆容、写真或修图语境下，识别冷白皮、冷�
 用户要求分析新妆容、美甲、提炼审美或迭代 Skill 时，读取 [参考图学习流程](references/reference-learning.md)。先忠实分析新参考，再沉淀独立配方；不将所有新风格强行改成冷白细闪。妆容侧负责脸部与美甲配方，穿搭侧负责耳环、项链等配饰的造型与佩戴关系；综合参考按重点协作，不重复套用两套完整流程。
 
 ## 风格索引
+- [玫粉柔雾黑底近景](portrait-aesthetic-skill/references/rose-pink-velvet-closeup.md)：柔雾冷乳白底、眼周微闪、连鼻玫粉腮红与渐层亮唇，含柔淡/浓郁两版；无图生成与一次近景身份参考两宫格获认可，保留参考图适配经验与未验证范围。
 - [低饱和玫瑰棕清晰眉眼妆](references/styles/muted-rose-brown-defined-eyes.md)：柔雾底妆、清晰眉眼与低饱和唇颊；保留自然裸桃棕、深邃玫瑰棕、柔粉玫瑰棕、上扬眼线亮唇四版；有身份图完整造型四宫格获用户认可。
 - [珍珠柔光裸桃妆](references/styles/pearl-glow-nude-peach.md)：含“象牙白妆容”强化配方；无图生成与固定人物换妆获用户认可，仍需改进人工纹理。
 - [冷白透粉闪光妆](portrait-aesthetic-skill/references/porcelain-rose-flash.md)：一次人物编辑获用户认可；跨人物稳定性未验证。新案例按学习流程追加至此。
