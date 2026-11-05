@@ -30,13 +30,13 @@ outfit-research/
 
 ## 持续学习参考图
 
-支持研究新妆容、穿搭与耳环、项链、戒指、美甲等配饰：观察参考图，区分事实与推断，提炼色彩、尺度、留白、材质和反光的关系，再保存独立风格卡。仅分析、已试图与用户认可分别记录；新案例不会自动覆盖旧案例或招牌默认。
+支持研究新妆容、穿搭与耳环、项链、戒指、美甲等配饰：观察参考图，区分事实与推断，提炼色彩、尺度、留白、材质和反光的关系，再保存独立风格卡。仅分析、已试图与用户认可分别记录；新案例进入可选配方库；未指定风格时先分析人物，再分部位组合精致妆，不设固定默认妆容。
 
 - [妆容与美甲的参考图学习流程](makeup-research/references/reference-learning.md)
 - [穿搭与配饰的参考图学习流程](outfit-research/references/reference-learning.md)
 
 例如：“研究这张妆容并沉淀成新配方”“提炼这对耳环与领口的关系”“根据这次反馈更新刚才的风格”。只要求分析时不自动生成图片或修改仓库；要求沉淀时按对应流程更新文件。
 
-- [低饱和玫瑰棕四版完整造型](makeup-research/references/styles/muted-rose-brown-defined-eyes.md)：A 银饰露肩、B 蕾丝深眼窝、C 低位眼镜与波点颈巾、D 金饰挂脖；有身份图四宫格验收通过，原招牌默认不变。
+- [低饱和玫瑰棕四版完整造型](makeup-research/references/styles/muted-rose-brown-defined-eyes.md)：A 银饰露肩、B 蕾丝深眼窝、C 低位眼镜与波点颈巾、D 金饰挂脖；有身份图四宫格验收通过，作为可选风格保留。
 
 - [玫瑰粉爱心与冰蓝银星完整造型](makeup-research/references/styles/pink-hearts-icy-blue-stars.md)：新身份参考两宫格验收通过，记录妆面、发型、配饰、服装、光线与迁移边界。

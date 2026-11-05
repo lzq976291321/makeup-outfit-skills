@@ -8,15 +8,15 @@ subject: 新的成年人物，或用户指定身份
 identity_source: 无 / 图1
 style_source: 图2 / 文字风格
 pose_source: 自拟 / 图3
-identity_keep: 脸部比例与个体特征；肤色默认冷白，明确要求可覆盖
+identity_keep: 脸部比例与个体特征；肤色按人物与目标设计，不预设冷白
 mood: 安静、视线略向下
 framing: 竖幅上半身近景
 aspect_ratio: 3:4
-lighting: 近轴前向闪光感，背景低亮度
-palette: 低饱和玫瑰色与中性环境
+lighting: 支持所选妆面显色、质地和脸部体积的照明
+palette: 按人物与妆面主辅色确定
 post_production: 整图白平衡、影调、饱和度、肤色保护与纹理目标
 makeup_intensity: 默认加强妆感，正常成片尺寸清楚可见；用户明确指定时覆盖
-makeup: 冷白透粉底妆，粉色珠光眼影与银粉细闪，水润玫瑰唇
+makeup: 依据人物分析填写各区域的颜色、范围、边缘、质地及主次组合
 pose: 双手松叠在下巴下方，明确遮挡
 wardrobe: 细罗纹针织
 material_contrast: 哑光织物、皮肤微光、少量银饰
